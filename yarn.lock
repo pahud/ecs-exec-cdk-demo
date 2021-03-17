@@ -407,13 +407,22 @@
     "@aws-cdk/custom-resources" "1.94.0"
     constructs "^3.2.0"
 
-"@aws-cdk/aws-iam@1.94.0", "@aws-cdk/aws-iam@^1.73.0":
+"@aws-cdk/aws-iam@1.94.0":
   version "1.94.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.94.0.tgz#a9f5b73562effae15715195d41bbb1e809098e00"
   integrity sha512-+3B+CMFjUVhi+Me9zfVwAWemEL/tQmoDpzfbX3DtUVf8AQlIYFPH36blcDbY9xfwBbqbf8EP/DddycIO89SNIg==
   dependencies:
     "@aws-cdk/core" "1.94.0"
     "@aws-cdk/region-info" "1.94.0"
+    constructs "^3.2.0"
+
+"@aws-cdk/aws-iam@^1.73.0":
+  version "1.94.1"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.94.1.tgz#c3e2fc3d3e61b0630627e5dee97393f9036d26db"
+  integrity sha512-LzdIZzRntlbidGjTG4FXENoMw2QYJQNU6gC9vERHV59NQceOIzzOPlhu+JtbjHpJaY1JN81yQQ01/q317zsIBQ==
+  dependencies:
+    "@aws-cdk/core" "1.94.1"
+    "@aws-cdk/region-info" "1.94.1"
     constructs "^3.2.0"
 
 "@aws-cdk/aws-kinesis@1.94.0":
