@@ -18,7 +18,7 @@ function ecs_exec_service() {
   CLUSTER=$1
   SERVICE=$2
   CONTAINER=$3
-  TASK=$(awsv1 ecs list-tasks --service-name $SERVICE --cluster $CLUSTER --query 'taskArns[0]' --output text)
+  TASK=$(aws ecs list-tasks --service-name $SERVICE --cluster $CLUSTER --query 'taskArns[0]' --output text)
   ecs_exec_task $CLUSTER $TASK $CONTAINER
 }
 
