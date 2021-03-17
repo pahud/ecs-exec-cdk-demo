@@ -1,0 +1,129 @@
+{
+  "vpc-provider:account=903779448426:filter.isDefault=true:region=ap-northeast-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-497a492d",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-05b946a306d81274b",
+            "cidr": "172.31.48.0/20",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-0fe0143fca606cf0b"
+          },
+          {
+            "subnetId": "subnet-0ae2846156ce0118c",
+            "cidr": "172.31.64.0/20",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-0fe0143fca606cf0b"
+          },
+          {
+            "subnetId": "subnet-063ca7ed4aacdbad7",
+            "cidr": "172.31.80.0/20",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-0fe0143fca606cf0b"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-a7f831ee",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "ap-northeast-1a",
+            "routeTableId": "rtb-7dfa5f1a"
+          },
+          {
+            "subnetId": "subnet-1d040645",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-7dfa5f1a"
+          },
+          {
+            "subnetId": "subnet-a68ad08e",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-7dfa5f1a"
+          }
+        ]
+      }
+    ]
+  },
+  "availability-zones:account=903779448426:region=ap-northeast-1": [
+    "ap-northeast-1a",
+    "ap-northeast-1c",
+    "ap-northeast-1d"
+  ],
+  "vpc-provider:account=903779448426:filter.isDefault=true:region=us-west-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-a522d7dc",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-08b2d414ad87fb172",
+            "cidr": "172.31.11.0/24",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-0c99af140fbbe3b17"
+          },
+          {
+            "subnetId": "subnet-0d0069776469b2e0d",
+            "cidr": "172.31.12.0/24",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-0c99af140fbbe3b17"
+          },
+          {
+            "subnetId": "subnet-0e0a074fc211df2ac",
+            "cidr": "172.31.13.0/24",
+            "availabilityZone": "us-west-2c",
+            "routeTableId": "rtb-0c99af140fbbe3b17"
+          },
+          {
+            "subnetId": "subnet-023a0778a5605ae13",
+            "cidr": "172.31.14.0/24",
+            "availabilityZone": "us-west-2d",
+            "routeTableId": "rtb-0c99af140fbbe3b17"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0c16aec6d2bece81d",
+            "cidr": "172.31.1.0/24",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-48a79931"
+          },
+          {
+            "subnetId": "subnet-050929f8c6efb7657",
+            "cidr": "172.31.2.0/24",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-48a79931"
+          },
+          {
+            "subnetId": "subnet-061c38942c5b3afa8",
+            "cidr": "172.31.3.0/24",
+            "availabilityZone": "us-west-2c",
+            "routeTableId": "rtb-48a79931"
+          },
+          {
+            "subnetId": "subnet-05685883c2773c212",
+            "cidr": "172.31.4.0/24",
+            "availabilityZone": "us-west-2d",
+            "routeTableId": "rtb-48a79931"
+          }
+        ]
+      }
+    ]
+  }
+}
