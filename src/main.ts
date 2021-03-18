@@ -64,12 +64,9 @@ export class Demo extends Construct {
     const cfnService = svc.service.node.findChild('Service') as ecs.CfnService;
     cfnService.addPropertyOverride('EnableExecuteCommand', true);
 
-    new CfnOutput(stack, 'ClusterOutput', { value: cluster.clusterName });
-    new CfnOutput(stack, 'ServiceOutput', { value: svc.service.serviceName });
-    new CfnOutput(stack, 'LogGroupNameOutput', { value: logGroup.logGroupName });
-    new CfnOutput(stack, 'BucketNameOutput', { value: execBucket.bucketName });
-    new CfnOutput(stack, 'TaskOutput', { value: task.taskDefinitionArn });
-    new CfnOutput(stack, 'KmsKeyIdOutput', { value: kmsKey.keyId });
+    new CfnOutput(stack, 'EcsExecCommand', { value: 
+    `ecs_exec_service ${cluster.clusterName} ${svc.service.serviceName} ${task.defaultContainer?.containerName}`
+    })
   }
   private _createTaskExecutionRole(): iam.Role {
     const role = new iam.Role(this, 'TaskExecRole', {
