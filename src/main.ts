@@ -5,7 +5,8 @@ import * as iam from '@aws-cdk/aws-iam';
 import * as kms from '@aws-cdk/aws-kms';
 import * as logs from '@aws-cdk/aws-logs';
 import * as s3 from '@aws-cdk/aws-s3';
-import { App, CfnOutput, Construct, Stack } from '@aws-cdk/core';
+import { App, CfnOutput, Construct, RemovalPolicy, Stack } from '@aws-cdk/core';
+import * as path from 'path';
 
 
 export class Demo extends Construct {
@@ -26,7 +27,7 @@ export class Demo extends Construct {
       taskRole: this._createTaskRole(),
     });
     task.addContainer('nginx', {
-      image: ecs.ContainerImage.fromRegistry('nginx'),
+      image: ecs.ContainerImage.fromAsset(path.join(__dirname, '../docker.d')),
       portMappings: [{ containerPort: 80 }],
     });
 
@@ -36,7 +37,10 @@ export class Demo extends Construct {
     // create log group
     const logGroup = new logs.LogGroup(this, 'LogGroup');
     // ecs exec bucket
-    const execBucket = new s3.Bucket(this, 'EcsExecBucket');
+    const execBucket = new s3.Bucket(this, 'EcsExecBucket', { 
+      removalPolicy: RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+    });
 
     logGroup.grantWrite(task.taskRole);
     kmsKey.grantDecrypt(task.taskRole);
