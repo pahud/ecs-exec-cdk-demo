@@ -15,9 +15,14 @@
 /tsconfig.eslint.json
 /tsconfig.jest.json
 /tsconfig.json
+cdk.context.json
+cdk.out
 cdk.out/
+dependabot.yml
 dist
+images
 junit.xml
+yarn-error.log
 !/lib
 !/lib/**/*.d.ts
 !/lib/**/*.js
