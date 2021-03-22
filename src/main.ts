@@ -37,7 +37,7 @@ export class Demo extends Construct {
     // create log group
     const logGroup = new logs.LogGroup(this, 'LogGroup');
     // ecs exec bucket
-    const execBucket = new s3.Bucket(this, 'EcsExecBucket', { 
+    const execBucket = new s3.Bucket(this, 'EcsExecBucket', {
       removalPolicy: RemovalPolicy.DESTROY,
       autoDeleteObjects: true,
     });
