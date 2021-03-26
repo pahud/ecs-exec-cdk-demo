@@ -398,6 +398,15 @@
     "@aws-cdk/core" "1.95.0"
     constructs "^3.3.69"
 
+"@aws-cdk/aws-events@1.95.1":
+  version "1.95.1"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-events/-/aws-events-1.95.1.tgz#e7bbc51d714deeb7671c006222f586c4ce0a6f8f"
+  integrity sha512-n04SrtLCb4a4j12tCubOYCwVIOM73zzeczZkHMycnjhoHn1apN4EFwrGCekOTScVSh4c4ie2bDgsOTpwGZKP2A==
+  dependencies:
+    "@aws-cdk/aws-iam" "1.95.1"
+    "@aws-cdk/core" "1.95.1"
+    constructs "^3.3.69"
+
 "@aws-cdk/aws-globalaccelerator@1.95.0":
   version "1.95.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-globalaccelerator/-/aws-globalaccelerator-1.95.0.tgz#ded3aafd090821864ae1bcd964e798d8af38fd16"
@@ -408,13 +417,22 @@
     "@aws-cdk/custom-resources" "1.95.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-iam@1.95.0", "@aws-cdk/aws-iam@^1.73.0":
+"@aws-cdk/aws-iam@1.95.0":
   version "1.95.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.95.0.tgz#22cc51c8d48b350a66007d500537890de9771eae"
   integrity sha512-jhwSb6fQHrMKMOyKQIY6KN4mAfIP2jDEr1FBRAh7kkjWDrScOa7m7YvyRhzgiQPxn8dWgf1P/b/mctxXfCUAFQ==
   dependencies:
     "@aws-cdk/core" "1.95.0"
     "@aws-cdk/region-info" "1.95.0"
+    constructs "^3.3.69"
+
+"@aws-cdk/aws-iam@1.95.1", "@aws-cdk/aws-iam@^1.73.0":
+  version "1.95.1"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.95.1.tgz#e4e2787b974124ae509a208968104ca71cd4514e"
+  integrity sha512-uEUQyrpE+eXP5yBqoeCZHZBtQLciQGWEH1Ib+AqIg3QCpnrdg/k1zwHoooTmG85tnIoh1buWzRln4VzTwtRe3Q==
+  dependencies:
+    "@aws-cdk/core" "1.95.1"
+    "@aws-cdk/region-info" "1.95.1"
     constructs "^3.3.69"
 
 "@aws-cdk/aws-kinesis@1.95.0":
@@ -436,7 +454,7 @@
     "@aws-cdk/core" "1.95.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-kms@1.95.0", "@aws-cdk/aws-kms@^1.73.0":
+"@aws-cdk/aws-kms@1.95.0":
   version "1.95.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-kms/-/aws-kms-1.95.0.tgz#18c72a5d9e296ba7baba6104f07e54735212a204"
   integrity sha512-EiWWqDLoDCCbmsrqFPSXOFI7LnE03Axn1F7+h4w3Oo/Wnpav01mhh3kCNhlA0Hlr92taV3+qYcrcwJir42wN9w==
@@ -444,6 +462,16 @@
     "@aws-cdk/aws-iam" "1.95.0"
     "@aws-cdk/core" "1.95.0"
     "@aws-cdk/cx-api" "1.95.0"
+    constructs "^3.3.69"
+
+"@aws-cdk/aws-kms@1.95.1", "@aws-cdk/aws-kms@^1.73.0":
+  version "1.95.1"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-kms/-/aws-kms-1.95.1.tgz#54dbe33eb5690d7521554c15ed381b52136f6ebd"
+  integrity sha512-BVMrVlKbDLxTNWwNMm7+muH98ucCU5U4K39m29XxO2DMw9PknIMHrxRZQYrGiNdBGskKKrIvYA1sNb+v7E6EjQ==
+  dependencies:
+    "@aws-cdk/aws-iam" "1.95.1"
+    "@aws-cdk/core" "1.95.1"
+    "@aws-cdk/cx-api" "1.95.1"
     constructs "^3.3.69"
 
 "@aws-cdk/aws-lambda@1.95.0":
@@ -528,7 +556,7 @@
     "@aws-cdk/cx-api" "1.95.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-s3@1.95.0", "@aws-cdk/aws-s3@^1.73.0":
+"@aws-cdk/aws-s3@1.95.0":
   version "1.95.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-s3/-/aws-s3-1.95.0.tgz#b329d981071e5e201202d899efc46a502fb92a5d"
   integrity sha512-8VqGw5LKmGPX3xPBayEiSEmslZFxELWr2/x3IMN72KEUrUwEO9wJAVpfwFSfhAJ1uQEvU9VmKiXdHosG0zb1UA==
@@ -538,6 +566,18 @@
     "@aws-cdk/aws-kms" "1.95.0"
     "@aws-cdk/core" "1.95.0"
     "@aws-cdk/cx-api" "1.95.0"
+    constructs "^3.3.69"
+
+"@aws-cdk/aws-s3@^1.73.0":
+  version "1.95.1"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-s3/-/aws-s3-1.95.1.tgz#4468c754258e59b659e8fbd50a9f2fba9e515d24"
+  integrity sha512-An03HaHx+pmtseXrfaMHySJyWuZI5BquNfxgQVrW1Ix5+aeHGmlgLdkhm7BRXhGvn6En6yiDo50TKM9IeUsiZg==
+  dependencies:
+    "@aws-cdk/aws-events" "1.95.1"
+    "@aws-cdk/aws-iam" "1.95.1"
+    "@aws-cdk/aws-kms" "1.95.1"
+    "@aws-cdk/core" "1.95.1"
+    "@aws-cdk/cx-api" "1.95.1"
     constructs "^3.3.69"
 
 "@aws-cdk/aws-sam@1.95.0":
@@ -709,7 +749,7 @@
     ignore "^5.1.8"
     minimatch "^3.0.4"
 
-"@aws-cdk/core@^1.73.0":
+"@aws-cdk/core@1.95.1", "@aws-cdk/core@^1.73.0":
   version "1.95.1"
   resolved "https://registry.yarnpkg.com/@aws-cdk/core/-/core-1.95.1.tgz#5ef20be2ce95c42b41dd458596c64784dfc2ccbb"
   integrity sha512-YO7j/Ev/5qpJv9mWX0mWTY7SiWqhum3S7ygJNNpkaThDplegLCa71IBbJlR6uK5vmkpJ30oir5XuO57gyQ/ORg==
