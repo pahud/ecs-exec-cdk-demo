@@ -18,6 +18,7 @@ const project = new AwsCdkTypeScriptApp({
     '@aws-cdk/aws-s3',
   ],
   devDeps: ['projen-automate-it'],
+  dependabot: false,
 });
 
 const automation = new Automation(project, {
