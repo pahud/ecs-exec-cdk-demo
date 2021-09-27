@@ -6,7 +6,7 @@
     },
     {
       "name": "@types/node",
-      "version": "^10.17.0",
+      "version": "^14.17.0",
       "type": "build"
     },
     {
@@ -58,7 +58,6 @@
     },
     {
       "name": "projen",
-      "version": "^0.22.8",
       "type": "build"
     },
     {
